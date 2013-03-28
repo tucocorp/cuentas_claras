@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  monto: 1
+  fechaPrestamo: 2013-03-20
+  fechaDevolucion: 2013-03-20
+  prestador: MyString
+  active: false
+
+two:
+  monto: 1
+  fechaPrestamo: 2013-03-20
+  fechaDevolucion: 2013-03-20
+  prestador: MyString
+  active: false
