@@ -4,6 +4,7 @@ CuentasClaras::Application.routes.draw do
   resources :debts
 
 
+  match 'descontar/:id' => 'debts#descontar', as: :descontar
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

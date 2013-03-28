@@ -12,13 +12,13 @@
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :"¿En que fecha te prestaron el dinero?", :class => 'control-label' %>
+    <%= f.label :"¿fecha de prestamo?", :class => 'control-label' %>
     <div class="controls">
       <%= f.text_field :fechaPrestamo, :class => 'date_select' %>
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :"¿En que fecha tienes que devolver el dinero?", :class => 'control-label' %>
+    <%= f.label :"¿fecha de devolucion?", :class => 'control-label' %>
     <div class="controls">
       <%= f.text_field :fechaDevolucion, :class => 'date_select' %>
     </div>
@@ -31,14 +31,14 @@
   </div>
 
   <div class="control-group">
-    <%= f.label :"descripcion del prestamo", :class => 'control-label' %>
+    <%= f.label :"Detalle del prestamo", :class => 'control-label' %>
     <div class="controls">
       <%= f.text_area :descripcion, :class => 'text_area' %>
     </div>
   </div>
 
   <div class="form-actions">
-    <%= f.submit 'Crear Nueva Deuda', :class => 'btn btn-primary' %>
+    <%= f.submit @boton, :class => 'btn btn-primary' %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancelar")),
                 debts_path, :class => 'btn' %>
   </div>

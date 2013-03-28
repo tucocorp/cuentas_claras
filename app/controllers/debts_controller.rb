@@ -26,6 +26,7 @@ class DebtsController < ApplicationController
   # GET /debts/new
   # GET /debts/new.json
   def new
+    @boton = "Crear nueva deuda"
     @debt = Debt.new
 
     respond_to do |format|
@@ -36,6 +37,7 @@ class DebtsController < ApplicationController
 
   # GET /debts/1/edit
   def edit
+    @boton = "Actualizar deuda"
     @debt = Debt.find(params[:id])
   end
 
@@ -82,5 +84,10 @@ class DebtsController < ApplicationController
       format.html { redirect_to debts_url }
       format.json { head :no_content }
     end
+  end
+
+  def descontar
+    @boton = "Realizar descuento"
+    @debt = Debt.find(params[:id])
   end
 end
