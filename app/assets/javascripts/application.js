@@ -15,3 +15,4 @@
 //= require jquery.ui.datepicker
 //= require twitter/bootstrap
 //= require_tree .
+//= require rails.validations
